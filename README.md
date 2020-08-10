@@ -34,4 +34,34 @@ RESULT:
 *we evalute LTC on some larger data set e.g:FUSE, EUES, and Enron and manually validate the detected table clones ,Table clones are common in real-world spreadsheets.LTC can detect inter and intra spread-sheet table clones preciesely.
 
 * In this papaer we observe that the tables in a table clone usually share the similar structure and formats. based on observation then we propose a learning based approcch, LTC detect the table clones with or without structural changes. Our experiments based on real world spreadsheets from the EUSES and Enron copra show that ,LTC can detect table clone effeectively, and significantly outperforms existing table clone detection tachniques. in future we also plan to purse the resarch directions.
- 
+
+2nd summary:
+                  DETERMINING THE INTRINSIC STRUCTURE OF PUBLIC SOFTWARE DEVLOPMENT HISTORY:
+
+
+This is written by Antoine Pietri(paris, france) ,Stefano Zacchiroli(paris, france) ,Guillaume Rousseau(paris, france) they are determining the intersinc structure of public software devlopment history. In 7th international conference on mining software Repositories, October 5-6,2020,seoul repulic of korea,ACM, Newyork, NY, USA it is about to be 4 pages .
+INTRODUCTION:
+    free open source software(FOSS) and collabrative devlopment platforms become more popular and famous , and past deacades has made publicly avalable and the wealth of software source code(any type of code) artifacts(type).source code fiels contains commits which is called metadata(it is data about data or code),tagged relased etc. which is more usefull and benificaal in software engneering(ESE) and mining software repository(MSR) research, basically version controll system(VCS) (is a system that records  changes to a file or set of files over time) has been frequently analyzed due to advance software evolution which makes easy to exploitation.now days systematic initatives has been devloped to collect as much public VCS data as possible in a single logical place.By the main structure we will use here software heritage and its data set.It is the largest and many type of collection of diffrent type of code(source code). it is about more than 5 billion source code files(which are unique and diffrent) and contain 1 billion unique commits. which were collected 1 billion unique commits,which were collected from more than 80 million software projects.
+Merkle DAG: it is large global graph linking together fully duplicated source code and its types(files, commits,directories,release,etc).but the actual source code files are reprsented as blob nodes. to that place which will distribute them (e.g: Git repositories), providing a unified and diffrent view on the whole software commas. the global version controll system (VCS) is a large and very difficult complex network which will genrate in result of human activity of software devlopment system . we can understand it easily and study it by using the classic techniques from network theory or network topology of the software heritage, network topology is the way in which the network is arranged inculude its physical apperance or loggical description of how the links nodes are setup to realate to each others.
+software heritage: largest platform  and more popular system for collabrative devlopment system.
+
+the main goal of this resarch is to collect or conduct the first sytematic resarch study on the intrinsic structure (internal structure) of the global graph of source code and its artifacts(type) which are stored in all publicaly available version control system. 
+
+RESEARCH: specifically  we will perform an resarch(exploratory) study . in this research not any kind of hypothesis included.
+Q1 what is the distribution of indegrees, out degrees and local clustering? which law do they fit?  (topology based)
+
+Q2 what is the distribution of connected component sizes?     (Modularity)
+
+Q3 what is distribution of shortest path lengths from roots to leaves?   (Height of network)
+
+RESULT:
+1,obtain the most recent new version of the software heritage graph dataset.
+2,we have compressed a graph using compression techniques, so that the VCS graph structure can be fits in to memory.these graph can be accesses from on will be in the compressed graph representation via the web graph java API.
+3, compute indegress/out degress and local clustering using standard algorithms(RQ1).
+4, compute connected components using standard algorithms(RQ2).
+5, create shortest path and spaning trees to graph leaves trhen measure lengths. this can be implemented with custom java code realizing Dijkstra is algorithm on top of the webgraph API.
+
+* we will analyze the global version control system graph as a naturally occuring complex network and determine its internsic structure.
+* to that end we will start from the software heritage graph dataset, compress it, and apply standard analysis techniques from network theory.
+* findings will allow to compare the global VCS graph to other large networks and help determining how to analyze all public code in future MSR|ESE studies.
+
