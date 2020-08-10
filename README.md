@@ -65,3 +65,33 @@ RESULT:
 * to that end we will start from the software heritage graph dataset, compress it, and apply standard analysis techniques from network theory.
 * findings will allow to compare the global VCS graph to other large networks and help determining how to analyze all public code in future MSR|ESE studies.
 
+3rd summary:
+                MEASURING SOFTWARE TESTABILITY MODULO TEST QUALITY:
+
+It is written by Valerio Terragni, Pasquale Salza, Mauro Pezze .2020 on the Measuring software testability module test quality, In 28th international conference on program comprehension(ICPC'20) October 5-6,2020, in seoul republic of korea, ACM, New york, NY, USA, and this paper is compossed of 11 pages.
+
+INTRODUCTION:
+       software testing is an a very importanat and labour-intensive(manual) and time-consuming work in software life cycle.software testing (it is a process of verifying a system with the purpose of identifying any error gaps or missing requirments versus  the actual requirments) they should have to work to make easier testing service which is very important for many of software companies. they should have to incress the number of detected faults. the work and effort for the testing software systems depend on the method of test.it means some software systems are easy to test than others. the relation between software method and test efforts is extermely important to control the cost of testing and improving the accureccy of test plans. the software system which has high degree of testability results in a low test effort. Early it was predicated that the test efforts can help the devlopers to (1) to identify the software components that requires more test efforts, on which devlopers has to focous to know the software quality.(2)they should have to plane  for testing activites and allocate them resources.(3)they should reorganize the refactoring oppertunites to Mostly studies will be mesarued and predicated its testability investigated on the relation between the class-level metrics in object oriented system. for instance Chidamber and Kemeerer(C&K)and the cost of writing test cases. these studies about test effort with the size and complexity of the test suits ,for instance the number of tests and assertions in the test class are associated to the class under test. the correlation between the class-level metrics and test effort has two limitations.(1)data set of small size and (2) mostly ignore the quality of the test suits.
+SMALL SAMPLE SIZE: such a small numbers of projects does not guarantee the generalizability of the results.
+IGNORE THE TEST QUALITY: perviously studies measured the test effort in term of the size of test classes. while mostly ignoring the quality of test. classes with comprable test effort but diffrent test quality should not have the same degree of testability.
+In this paper they given 9 new approch to mesaure the testability of object oriented classes, they make approch to normalizes the test effort of a class with repect to the quality of its tests.which we count with code coverage and mutation score.
+We observed and investigate our approch with 28 metrics to characterize the class properties, Six metrics to measure the test effort and the three metrics to  determine the test quality. we observed 9861 pairs of java classes and corresponding Junit test classes collected from 1186 open source projects on Github. we compare the spearman's relation  cofficent for all 168 pair wise combinations of class and test effort metrics before and after normalization with the test quality metrics. better correlation(relation) leads to bettere predection and thus the better prediction of test effort.
+The main goal and contribution of this paper for a better comprehension of software testability by:
+* presenting the by far largest study on the correlation of class and test effort metrics in terms of analyzed metrics, classes and projects.
+* extending the testability measurments by normalizing the test effort.
+* showing that the proposed normalization improves the correlation between class metrics and test effort.
+* giving important insight on software testability that confrim some of the findings of previously studies as well as uncover previously unknown correlations between object-oriented design properties and test effort.
+*publicly releasing our dataset for further studies.
+
+RESARCH:
+in this section we will describe the set of experiments that evalute on proposed approch for measuring the software testability.
+RQ1: What is the relation between class aand test effort metrics?
+RQ2: Does the normalization with test quality metrics increase correlation?
+
+RESULT:
+In this we had computed the spearman's relation cofficent for all 168(28x6) pair-wise combinations of class and test effort metrics. spearmans's coffient is a popular non parametric measure of correlation used in related studies(RQ1).
+
+We normalized each value of the test-effort metrics with the corresponding value of a test-quality metric, by using this formula(RQ2)
+            normalized test- effort value = actual test- effort value
+             target test - quality value   actual test- quality value.
+
